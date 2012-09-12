@@ -1,0 +1,830 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Course_Regist.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Course_Regist.ico"
+IDR_COURSETYPE          ICON    DISCARDABLE     "res\\Course_RegistDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NAME                BITMAP  DISCARDABLE     "res\\name.bmp"
+IDB_MM                  BITMAP  DISCARDABLE     "res\\mm.bmp"
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "系统(&S)"
+    BEGIN
+        MENUITEM "登录(&I)",                    IDM_LOGIN
+        MENUITEM "退出(&O)",                    IDM_LOGOUT
+        MENUITEM "关闭(&C)",                    ID_APP_EXIT
+    END
+    POPUP "学生管理(&U)"
+    BEGIN
+        MENUITEM "增加学生(&A)",                IDM_AddStu
+        MENUITEM "删除学生(&D)",                IDM_DelStu
+        MENUITEM "修改学生(&M)",                IDM_MStu
+    END
+    POPUP "教师管理(&T)"
+    BEGIN
+        MENUITEM "增加教师(&A)",                IDM_AddPro
+        MENUITEM "删除教师(&D)",                IDM_DelPro
+        MENUITEM "修改教师(&M)",                IDM_MPro
+    END
+    POPUP "课程管理(&C)"
+    BEGIN
+        MENUITEM "增加课程(&A)",                IDM_AddCS
+        MENUITEM "删除课程(&D)",                IDM_DelCS
+        MENUITEM "修改课程(&M)",                IDM_MCS
+    END
+    POPUP "个人信息(&P)"
+    BEGIN
+        MENUITEM "查看信息(&S)",                IDM_INFORMATION
+        MENUITEM "修改密码(&M)",                IDM_MPassWord
+    END
+    POPUP "选课(&X)"
+    BEGIN
+        MENUITEM "教师选课",                    IDM_TSC
+        MENUITEM "学生选课",                    IDM_SSC
+    END
+    POPUP "查看(&Q)"
+    BEGIN
+        MENUITEM "查看成绩",                    IDM_MSCORE
+    END
+    POPUP "成绩评定(&G)"
+    BEGIN
+        MENUITEM "登记分数",                    IDM_GRADE
+    END
+    POPUP "选课控制(&M)"
+    BEGIN
+        MENUITEM "下一阶段",                    IDM_NextStep
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)...",                 ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "软件工程实践"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,28,41,21,21
+    LTEXT           "选课系统1.0 版",IDC_STATIC,78,39,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,78,66,119,8
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录选课系统"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_NAME,84,16,63,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,84,42,63,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,34,70,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,70,50,14
+    CTEXT           "用户名:",IDC_STATIC,51,18,27,12
+    CTEXT           "密   码:",IDC_STATIC,51,44,27,12
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP,40,18,6,8
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,40,45,6,6
+END
+
+IDD_MPassWord DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改个人密码"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_NewPassword,84,25,75,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,31,68,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,68,50,14
+    LTEXT           "请输入新密码:",IDC_STATIC,27,25,51,12
+END
+
+IDD_AddStu DIALOG DISCARDABLE  0, 0, 187, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加学生"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_ASID,66,13,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASNM,66,33,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASBD,66,54,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASGD,66,73,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASST,66,89,79,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,22,108,50,14
+    PUSHBUTTON      "取消",IDCANCEL,96,108,50,14
+    LTEXT           "学生ID:",IDC_STATIC,19,14,41,13
+    LTEXT           "姓名:",IDC_STATIC,19,34,41,13
+    LTEXT           "生日:",IDC_STATIC,19,55,41,13
+    LTEXT           "年级:",IDC_STATIC,18,71,41,13
+    LTEXT           "状态:",IDC_STATIC,18,88,41,13
+END
+
+IDD_DelStu DIALOG DISCARDABLE  0, 0, 187, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除学生"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,31,71,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,71,50,14
+    EDITTEXT        IDC_DelStu,86,31,62,14,ES_AUTOHSCROLL
+    LTEXT           "学生ID:",IDC_STATIC,44,31,25,14
+END
+
+IDD_MStu DIALOG DISCARDABLE  0, 0, 354, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改学生信息"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_MStuSC,73,45,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MStuID,248,36,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MStuNM,248,56,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MStuBD,248,77,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MStuGD,248,96,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MStuST,248,112,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取信息",IDC_MGetInfo,60,151,50,14
+    DEFPUSHBUTTON   "提交",IDOK,146,151,50,14
+    PUSHBUTTON      "取消",IDCANCEL,232,151,50,14
+    LTEXT           "学生ID:",IDC_STATIC,201,37,41,13
+    LTEXT           "姓名:",IDC_STATIC,201,57,41,13
+    LTEXT           "生日:",IDC_STATIC,201,78,41,13
+    LTEXT           "年级:",IDC_STATIC,200,94,41,13
+    LTEXT           "状态:",IDC_STATIC,200,111,41,13
+    GROUPBOX        "修改为",IDC_STATIC,192,28,144,103
+    LTEXT           "学生ID:",IDC_STATIC,30,45,32,13
+    GROUPBOX        "修改对象",IDC_STATIC,20,29,145,102
+    LTEXT           "\t输入学生学号后\n\t  点击获取信息\n\n             在右边修改学生信息\n\t  点击提交",
+                    IDC_STATIC,38,74,115,48
+END
+
+IDD_AddPro DIALOG DISCARDABLE  0, 0, 187, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加教师"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_APID,72,13,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_APNM,72,33,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_APBD,72,54,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_APDP,72,73,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_APST,72,89,79,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,28,108,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,108,50,14
+    LTEXT           "教师ID:",IDC_STATIC,25,14,41,13
+    LTEXT           "姓名:",IDC_STATIC,25,34,41,13
+    LTEXT           "生日:",IDC_STATIC,25,55,41,13
+    LTEXT           "部门:",IDC_STATIC,24,71,41,13
+    LTEXT           "状态:",IDC_STATIC,24,88,41,13
+END
+
+IDD_DelPro DIALOG DISCARDABLE  0, 0, 187, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除教师"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,31,71,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,71,50,14
+    EDITTEXT        IDC_DelPro,86,31,62,14,ES_AUTOHSCROLL
+    LTEXT           "教师ID:",IDC_STATIC,44,31,25,14
+END
+
+IDD_MPro DIALOG DISCARDABLE  0, 0, 354, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改教师信息"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_MProSC,73,45,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MProID,248,36,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MProNM,248,56,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MProBD,248,77,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MProDP,248,96,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MProST,248,112,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取信息",IDC_MGetInfo,60,151,50,14
+    DEFPUSHBUTTON   "提交",IDOK,146,151,50,14
+    PUSHBUTTON      "取消",IDCANCEL,232,151,50,14
+    LTEXT           "教师ID:",IDC_STATIC,201,37,41,13
+    LTEXT           "姓名:",IDC_STATIC,201,57,41,13
+    LTEXT           "生日:",IDC_STATIC,201,78,41,13
+    LTEXT           "部门:",IDC_STATIC,200,94,41,13
+    LTEXT           "状态:",IDC_STATIC,200,111,41,13
+    GROUPBOX        "修改为",IDC_STATIC,192,28,144,103
+    LTEXT           "教师ID:",IDC_STATIC,30,45,32,13
+    GROUPBOX        "修改对象",IDC_STATIC,20,29,145,102
+    LTEXT           "\t输入教师号后\n\t  点击获取信息\n\n             在右边修改教师信息\n\t  点击提交",
+                    IDC_STATIC,38,74,115,48
+END
+
+IDD_AddCS DIALOG DISCARDABLE  0, 0, 187, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加课程"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_ACSID,66,13,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACSNM,66,30,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACSTY,66,49,79,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "提交",IDOK,22,72,50,14
+    PUSHBUTTON      "取消",IDCANCEL,96,72,50,14
+    LTEXT           "课程ID:",-1,19,14,41,13
+    LTEXT           "课程名称:",-1,19,31,41,13
+    LTEXT           "课程性质:",-1,18,47,41,13
+END
+
+IDD_DelCS DIALOG DISCARDABLE  0, 0, 187, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除课程"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,31,71,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,71,50,14
+    EDITTEXT        IDC_DelCS,86,31,62,14,ES_AUTOHSCROLL
+    LTEXT           "课程ID:",IDC_STATIC,44,31,25,14
+END
+
+IDD_MCS DIALOG DISCARDABLE  0, 0, 354, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改课程信息"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_MCSSC,73,45,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCSID,248,36,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCSNM,248,56,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCSTY,248,77,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取信息",IDC_MGetInfo,60,119,50,14
+    DEFPUSHBUTTON   "提交",IDOK,146,119,50,14
+    PUSHBUTTON      "取消",IDCANCEL,232,119,50,14
+    LTEXT           "课程ID:",-1,201,37,41,13
+    LTEXT           " 课程名称:",-1,201,57,41,13
+    LTEXT           "课程性质:",-1,201,78,41,13
+    GROUPBOX        "修改为",-1,192,28,144,74
+    LTEXT           "课程ID:",-1,30,45,32,13
+    GROUPBOX        "修改对象",-1,20,29,145,74
+    LTEXT           "输入课程号-->  获取信息\n\n修改课程信息-->点击提交",-1,
+                    37,68,115,30
+END
+
+IDD_TSC DIALOG DISCARDABLE  0, 0, 371, 208
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教师选课"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,253,183,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,311,183,50,14
+    GROUPBOX        "可选课程",IDC_STATIC,13,9,79,190,BS_CENTER | BS_FLAT
+    GROUPBOX        "课程信息",IDC_STATIC,98,9,146,117,BS_CENTER | BS_FLAT
+    GROUPBOX        "操作",IDC_STATIC,98,128,146,70,BS_CENTER | BS_FLAT
+    GROUPBOX        "已选课程",IDC_STATIC,250,9,109,167,BS_CENTER | BS_FLAT
+    LISTBOX         IDC_LISTTTS,17,19,72,175,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTTHS,254,18,100,151,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "课程编号:",IDC_STATIC,118,32,35,10
+    LTEXT           "课程名称:",IDC_STATIC,118,49,35,10
+    LTEXT           "课程性质:",IDC_STATIC,118,80,35,10
+    LTEXT           "",IDC_TSCNM,166,49,38,11
+    LTEXT           "",IDC_TSCID,166,32,38,11
+    LTEXT           "",IDC_TSCTY,166,81,38,11
+    LTEXT           "学生人数:",IDC_STATIC,119,96,35,10
+    LTEXT           "",IDC_TSSLTED,166,97,38,11
+    LTEXT           "授课教师:",IDC_STATIC,118,64,35,10
+    LTEXT           "",IDC_TSCT,165,65,38,11
+    CONTROL         "选择此课(已选)",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,170,141,67,12
+    CONTROL         "退选此课(未选)",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    171,159,67,12
+    PUSHBUTTON      "执行",IDC_TEXCUTE,110,156,44,15
+    PUSHBUTTON      "查询",IDC_TSeekCIF,110,137,44,15
+END
+
+IDD_SSC DIALOG DISCARDABLE  0, 0, 371, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生选课"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,250,183,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,309,183,50,14
+    GROUPBOX        "可选课程",IDC_STATIC,13,9,79,190,BS_CENTER | BS_FLAT
+    GROUPBOX        "课程信息",IDC_STATIC,98,9,146,117,BS_CENTER | BS_FLAT
+    GROUPBOX        "操作",IDC_STATIC,98,128,146,70,BS_CENTER | BS_FLAT
+    GROUPBOX        "已选课程",IDC_STATIC,250,9,109,117,BS_CENTER | BS_FLAT
+    LISTBOX         IDC_LISTSTS,17,19,72,175,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSHS,254,18,100,99,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "课程编号:",IDC_STATIC,118,32,35,10
+    LTEXT           "课程名称:",IDC_STATIC,118,49,35,10
+    LTEXT           "课程性质:",IDC_STATIC,118,80,35,10
+    LTEXT           "",IDC_SSCNM,166,49,38,11
+    LTEXT           "",IDC_SSCID,166,32,38,11
+    LTEXT           "",IDC_SSCTY,166,81,38,11
+    LTEXT           "学生人数:",IDC_STATIC,119,96,35,10
+    LTEXT           "",IDC_SSSLTED,166,97,38,11
+    LTEXT           "授课教师:",IDC_STATIC,118,64,35,10
+    LTEXT           "",IDC_SSCT,165,65,38,11
+    CONTROL         "选择此课(选中)",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,170,141,67,12
+    CONTROL         "退选此课(不选)",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,
+                    171,159,67,12
+    PUSHBUTTON      "执行",IDC_SEXCUTE,110,156,44,15
+    PUSHBUTTON      "查询",IDC_SSeekCIF,110,137,44,15
+    GROUPBOX        "您还差...",IDC_STATIC,250,128,109,50,BS_CENTER | 
+                    BS_FLAT
+    LTEXT           "门必修课",IDC_STATIC,292,142,42,13
+    LTEXT           "门选修课",IDC_STATIC,292,159,42,13
+    LTEXT           "",IDC_StuSLB,271,143,16,12
+    LTEXT           "",IDC_StuSLX,271,158,16,12
+END
+
+IDD_Grade DIALOG DISCARDABLE  0, 0, 367, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登记分数"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,245,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,304,162,50,14
+    GROUPBOX        "未登分",IDC_STATIC,245,7,109,144,BS_CENTER | BS_FLAT
+    LISTBOX         IDC_LISTNG,248,18,100,130,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "所教课程",IDC_STATIC,7,7,109,89,BS_CENTER | BS_FLAT
+    LISTBOX         IDC_LISTMC,10,17,103,76,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "载入学生",IDC_LoadStu,21,157,44,14
+    GROUPBOX        "",IDC_STATIC,7,105,109,81,BS_CENTER | BS_FLAT
+    LTEXT           "当前课程:",IDC_STATIC,23,132,36,14
+    EDITTEXT        IDC_GSID,168,111,60,13,ES_AUTOHSCROLL
+    LTEXT           "学生ID:",IDC_STATIC,135,113,30,13
+    EDITTEXT        IDC_GSSC,169,135,60,13,ES_AUTOHSCROLL
+    LTEXT           "分数:",IDC_STATIC,136,135,26,13
+    PUSHBUTTON      "登分",IDC_DENFEN,136,161,42,15
+    GROUPBOX        "已经登记",IDC_STATIC,125,7,109,89,BS_CENTER | BS_FLAT
+    LISTBOX         IDC_LISTGH,128,17,102,76,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,127,103,109,81,BS_CENTER | BS_FLAT
+    LTEXT           "",IDC_GCurC,61,132,36,14
+END
+
+IDD_MSCORE DIALOG DISCARDABLE  0, 0, 172, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "成绩查询"
+FONT 10, "System"
+BEGIN
+    RTEXT           "",IDC_CNAME1,35,31,38,19
+    RTEXT           "",IDC_CNAME2,35,52,38,19
+    RTEXT           "",IDC_CNAME3,35,73,38,19
+    RTEXT           "",IDC_CNAME4,35,94,38,19
+    RTEXT           "",IDC_CNAME5,35,115,38,19
+    RTEXT           "",IDC_CNAME6,35,136,38,19
+    LTEXT           "",IDC_CSCORE1,90,31,38,19
+    LTEXT           "",IDC_CSCORE2,90,52,38,19
+    LTEXT           "",IDC_CSCORE3,90,73,38,19
+    LTEXT           "",IDC_CSCORE4,90,94,38,19
+    LTEXT           "",IDC_CSCORE5,90,115,38,19
+    LTEXT           "",IDC_CSCORE6,90,136,38,19
+    GROUPBOX        "各科成绩",IDC_STATIC,17,13,141,152,BS_CENTER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "选课系统\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "选课系统\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "选课系统.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "选课系统\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_MPassWord, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_AddStu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DelStu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_MStu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_AddPro, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DelPro, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_MPro, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_AddCS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DelCS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_MCS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_TSC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_SSC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_Grade, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_MSCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 17
+BEGIN
+    BUTTON      ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Course_Regist\n\nCourse\n\n\nCourseRegist.Document\nCourse Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Course_Regist"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Course_Regist.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

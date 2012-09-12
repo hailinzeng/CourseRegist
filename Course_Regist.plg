@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Course_Regist - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Course_Regist.res" /d "_DEBUG" "D:\MyProjects\CourseRegist\Course_Regist.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7C.tmp" with contents
+[
+/nologo /MTd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Course_Regist.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyProjects\CourseRegist\Course_Regist.cpp"
+"D:\MyProjects\CourseRegist\Course_RegistDoc.cpp"
+"D:\MyProjects\CourseRegist\Course_RegistView.cpp"
+"D:\MyProjects\CourseRegist\DiaAddCS.cpp"
+"D:\MyProjects\CourseRegist\DiaAddPro.cpp"
+"D:\MyProjects\CourseRegist\DiaAddStu.cpp"
+"D:\MyProjects\CourseRegist\DiaDelCS.cpp"
+"D:\MyProjects\CourseRegist\DiaDelPro.cpp"
+"D:\MyProjects\CourseRegist\DiaDelStu.cpp"
+"D:\MyProjects\CourseRegist\DiaGrade.cpp"
+"D:\MyProjects\CourseRegist\DiaLogin.cpp"
+"D:\MyProjects\CourseRegist\DiaMCS.cpp"
+"D:\MyProjects\CourseRegist\DiaMPassWord.cpp"
+"D:\MyProjects\CourseRegist\DiaMpro.cpp"
+"D:\MyProjects\CourseRegist\DiaMScore.cpp"
+"D:\MyProjects\CourseRegist\DiaMStu.cpp"
+"D:\MyProjects\CourseRegist\DiaSSC.cpp"
+"D:\MyProjects\CourseRegist\DiaTSC.cpp"
+"D:\MyProjects\CourseRegist\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7D.tmp" with contents
+[
+/nologo /MTd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Course_Regist.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyProjects\CourseRegist\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Course_Regist.pdb" /debug /machine:I386 /out:"Debug/Course_Regist.exe" /pdbtype:sept 
+.\Debug\Course_Regist.obj
+.\Debug\Course_RegistDoc.obj
+.\Debug\Course_RegistView.obj
+.\Debug\DiaAddCS.obj
+.\Debug\DiaAddPro.obj
+.\Debug\DiaAddStu.obj
+.\Debug\DiaDelCS.obj
+.\Debug\DiaDelPro.obj
+.\Debug\DiaDelStu.obj
+.\Debug\DiaGrade.obj
+.\Debug\DiaLogin.obj
+.\Debug\DiaMCS.obj
+.\Debug\DiaMPassWord.obj
+.\Debug\DiaMpro.obj
+.\Debug\DiaMScore.obj
+.\Debug\DiaMStu.obj
+.\Debug\DiaSSC.obj
+.\Debug\DiaTSC.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\Course_Regist.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Course_Regist.cpp
+Course_RegistDoc.cpp
+Course_RegistView.cpp
+DiaAddCS.cpp
+DiaAddPro.cpp
+DiaAddStu.cpp
+DiaDelCS.cpp
+DiaDelPro.cpp
+DiaDelStu.cpp
+DiaGrade.cpp
+DiaLogin.cpp
+DiaMCS.cpp
+DiaMPassWord.cpp
+DiaMpro.cpp
+DiaMScore.cpp
+DiaMStu.cpp
+DiaSSC.cpp
+DiaTSC.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Course_Regist.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
